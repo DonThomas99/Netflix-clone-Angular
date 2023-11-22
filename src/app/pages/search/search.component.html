@@ -1,0 +1,18 @@
+<div class="contain mt-5 p-5">
+<form [formGroup]="searchForm" (ngSubmit)="submitForm()">
+
+    <div class="row">
+
+        <div class="mb-3 col-lg-10">
+            <input type="text" class="form-control" formControlName="movieName" placeholder="Search Movies,series here...">
+          </div>
+
+          <div class="col-lg-2">
+            <button class="btn btn-md button">
+                Search
+            </button>
+          </div>
+    </div>
+
+</form>
+</div>
