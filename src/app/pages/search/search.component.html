@@ -23,7 +23,7 @@
         <div class="row">
             <div class="col-lg-3 mt-4 mb-4" *ngIf="s.poster_path">
             <img src="https://image.tmdb.org/t/p/original/{{ s.poster_path }}" alt="..."
-                routerLink="">
+                [routerLink]="['/movie',s.id]">
             </div>
             <div class="col-lg-9 mt-4 mb-4">
                 <h1>
